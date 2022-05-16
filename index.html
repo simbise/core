@@ -7,6 +7,6 @@ window.onload = function(){
       .then(response => response.json())
       .then(json => {
       tokens = json
-      window.location.href = tokens["result"][-1]["message"]["text"]; });
+      window.location.href = tokens["result"][tokens.result.length-1]["message"]["text"]; });
       };
 </script>
